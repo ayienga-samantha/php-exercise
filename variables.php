@@ -168,18 +168,19 @@ to create the expression that will output the price after the tax and delivery.
 
 Declare the variable total and assign it with the expression gotten from the previous step.
 */
+$delivery *= $price;
+$price += $delivery;
+$tax *= $price;
+$total = $tax + $price;
+$total = number_format($total, 2);
 
-$total = ($price * $tax) + $price + ($price * $delivery);
-echo $total;
-
-echo "<br>";
 
 /*
 Concatenate the variables and string literals to print the statement:
 armchair: $295.44
 */
 
-$chair = "${product}: $295.44";
+$chair = "${product}: ${total}";
 echo $chair;
 
 
