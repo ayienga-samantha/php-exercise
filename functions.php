@@ -31,7 +31,6 @@ This function has 3 parameters: a, b and c.
 calculateArithmeticMean prints the arithmetic mean of a, b and c.
 */
 
-//$calculateArithmeticMean = ["a, b, c"];
 function calculateArithmeticMean($a, $b, $c){
    echo ($a + $b + $c)/3;
 }
